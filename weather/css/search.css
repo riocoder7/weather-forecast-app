@@ -124,14 +124,13 @@ h3 {
 .return {
   display: none;
 }
-
 .box {
   max-width: 400px;
   height: auto;
   padding: 0 40px;
   margin-left: auto;
   margin-right: auto;
-  border:1px solid black;
+  /* border:1px solid black; */
   margin-top: 40px;
 }
 .weather-box {
@@ -187,6 +186,28 @@ h3 {
   place-content: center;
   color: var(--white-color);
   background-color: var(--font-color-main);
+}
+.suggestions {
+  background-color: "red";
+  top: 150px;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  width: 70%;
+  max-height: 200px;
+  overflow-y: auto;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:hover {
+  background: #f0f0f0;
 }
 
 @media (max-width: 400px) {

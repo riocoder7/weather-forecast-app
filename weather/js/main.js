@@ -1,4 +1,6 @@
-const apiKey = "fbcca56a8bc55fb43602a104df8fa915";
+import { weatherApiKey } from './apikey.js';
+
+const apiKey = weatherApiKey;
 
 navigator.geolocation.getCurrentPosition(async (position) => {
     try {
